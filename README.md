@@ -1,3 +1,31 @@
 # PhotoGalleryProject
 This is test project.
-I made a weibsite to show the picture of cats from Nürnberg Tierheim.
+
+## About the project
+This website shows the picture of cats from Nürnberg Tierheim.
+
+![alt catproject](/assets/Screenshot%20from%202024-03-07%2012-45-01.png)
+
+## Features
+- Adding more photos will not affect the layout.
+- Dynamic shadow and text effects will appear when you hover the mouse over the photo.
+- layout is adaptable to big and small screens.
+
+
+![alt cats for big screen](/assets/Screenshot%20from%202024-03-07%2012-56-01.png)
+
+
+## Later features
+- []try more effects on mouse hover
+- [] Show photo when clicked
+
+
+## Contact
+- Xiangyu Liu:
+xiangyu.liu@gmx.de
+- project link:
+[https://github.com/SelinLiu2023/PhotoGalleryProject.git](https://github.com/SelinLiu2023/PhotoGalleryProject.git)
+
+## Acknowledgments
+free photos from :
+[pexels](https://www.pexels.com/search/cat/)
