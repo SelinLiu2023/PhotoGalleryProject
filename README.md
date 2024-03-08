@@ -16,8 +16,8 @@ This website shows the picture of cats from Nürnberg Tierheim.
 
 
 ## Later features
-- []try more effects on mouse hover
-- [] Show photo when clicked
+- [ ] try more effects on mouse hover
+- [ ] Show photo when clicked
 
 
 ## Contact

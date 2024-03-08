@@ -3,15 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+:root{
+  --iconSize: 80px;
+}
 body{
     width: 100vw;
     font-family: Arial, Helvetica, sans-serif;
 }
-header,nav{
+header{
     color: #555;
     background: rgba(93, 186, 240,0.5);
     padding: 20px 20px;
-
+}
+nav{
+    color: #555;
+    background: rgba(68, 172, 233, 0.5);
+    padding: 10px 20px;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 50px;
+    padding-right: 50px;
+}
+.titleText{
+  padding-left: 5px;
+  font-size:40px;
 }
 nav h2, nav ul{
     display: inline-block;
@@ -23,77 +40,156 @@ nav ul li{
 }
 nav ul li a{
     text-decoration: none;
-    color: #555;
+    color: #5d5d5d;
     font-size: 20px;
-    background-color: rgba(93, 186, 240,0.2);
+    background-color: rgba(53, 108, 140, 0.2);
     padding: 0.1em 0.3em;
     border-radius: 5px;
 }
 nav ul li a:hover{
     color: black;
 }
-header{
-    width: 100%;
-    height: 100px;
-}
-
 .mainContainer{
     width: 90%;
     margin: 10px auto;
     display: grid;
     grid-template-columns: repeat(2,1fr);
 }
-.imgItem {
+.imgItem{
     position: relative;
     margin: 15px 10px;
-  }
-  
-  .imgItem img{
-    width: 100%;
-    /* transition: transform 2s ease; */
-  }
-  
-  .imgItem .overlay {
-    position: absolute;
-    top: 0;
-    /* left: -100%; */
-    width: 100%;
-    height: 0;
-    background-color: rgba(0, 0, 0, 0.5);
-    transition:  1s ease;
-    color: white;
-    font-size: large;
-    display: flex;
-    justify-content: center;
-    align-items: flex-end;
-
-  }
-  .imgItem .overlay p{
-
-    display: none;
-    padding-bottom: 20%;
-  }
-  .imgItem:hover .overlay {
-    height: 100%;
-  }
-  .imgItem:hover .overlay p{
-    display: initial;
-
-  }
-  footer{
-    width: 100%;
-    height: 30px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #e1dddd;
-    color: #8a8888;
-  }
-  @media (min-width: 1000px) {
-    .mainContainer{
-        width: 90%;
-        display: grid;
-        grid-template-columns: repeat(4,1fr);
-        /* column-gap: 20px; */
+}
+.imgItem img{
+  width: 100%;
+}
+.imgItem .overlay {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  height: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  transition:  1s ease;
+  color: white;
+  font-size: large;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+}
+.imgItem .overlay p{
+  display: none;
+  padding-bottom: 20%;
+}
+.imgItem:hover .overlay {
+  height: 100%;
+}
+.imgItem:hover .overlay p{
+  display: initial;
+}
+footer{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #e1dddd;
+  color: #8a8888;
+}
+@media (min-width: 1000px) {
+  .mainContainer{
+      width: 90%;
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+      /* column-gap: 20px; */
     }
-  }
+  .title h1{
+      display: inline-block;
+    }
+}
+.catIcon{
+  width: var(--iconSize);
+  height: var(--iconSize);
+  min-width: var(--iconSize);
+  min-height: var(--iconSize);
+  background-color: lightgray;
+  padding: 1px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 20%;
+}
+.cat{
+  width: 65%;
+  height: 65%;
+  margin-top: 20%;
+  margin-left: 30%;
+  transform: rotate(45deg);
+  background-color: lightgray;
+}
+.face {
+  position: relative;
+  width: 100%;
+  height: 80%;
+  background-color: #000;
+  border-radius: 100%;
+}
+.face::before,.face::after {
+  content: '';
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  background-color: #000;
+  background-color: black;
+}
+.face::before{
+  left: 10%;
+  transform: rotate(20deg);
+}
+.face::after {
+  left: 60%;
+  transform: rotate(-20deg);
+}
+.eyes{
+  position: absolute;
+  top: 40%;
+  width: 15%;
+  height: 15%;
+  border-radius: 50%;
+  background-color: rgb(229, 229, 13);
+  z-index: 10;
+}
+.eyeLeft{
+  left: 20%;
+}
+.eyeright{
+  left: 65%;
+}
+.hand{
+  background-color: #000;
+  width: 40%;
+  height: 40%;
+  border-radius: 50%;
+}
+.lefthand{
+  width: 40%;
+  height: 20%;
+  position: absolute;
+  top: 20%;
+  left: -10%;
+}
+.righthand{
+  position: absolute;
+  width: 30%;
+  height: 20%;
+  left: 70%;
+  bottom: -18%;
+  transform: rotate(90deg);
+}
+.text{
+  position: absolute;
+  left: 17%;
+  bottom: 10%;
+  font-size: smaller;
+  font-weight: 800;
+  color: #0c364f;
+  text-shadow: 1px 1px 1px #AEDCF7;
+}
