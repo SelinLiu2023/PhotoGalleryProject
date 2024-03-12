@@ -137,7 +137,6 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  /* background-color: rgba(58, 123, 91, 0.4); */
   transform: translateX(100%);
   transition: 1s;
   color: whitesmoke;
@@ -148,7 +147,6 @@ footer{
 .rightToLeftBox:hover .textMove{
   transform: translateX(0);
 }
-
 .coverBox{
   color: whitesmoke;
 }
@@ -160,9 +158,6 @@ footer{
   background-color: rgba(58, 123, 91, 0.9);
   transition: 0.5s ease-in;
   opacity: 0;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-evenly; */
 }
 .coverHeader1,.coverHeader2,.coverText,.coverLink{
   display: block;
@@ -174,7 +169,6 @@ footer{
 }
 .coverHeader1{
   top: 80%;
-  /* transform: translateX(0); */
 }
 .coverHeader2{
   top: 80%;
@@ -183,14 +177,6 @@ footer{
 .coverText{
   top: 30%;
   font-size: 2px;
-  /* height: 50px; */
-  /* min-height: 50px; */
-  overflow: hidden;
-}
-.coverText p{
-  min-height: 110px;
-  overflow: hidden;
-
 }
 .coverLink{
   text-align: center;
@@ -199,7 +185,6 @@ footer{
 .coverLink a{
   top: 50%;
   text-decoration: none;
-  /* text-align: center; */
   color: #999;
   font-size: 30px;
 }
@@ -215,19 +200,14 @@ footer{
   }
   .coverHeader1{
     top: 10%;
-    /* margin: 0 auto; */
     text-align: center;
-    /* transform: translateX(10%); */
   }
   .coverHeader2{
     top: 20%;
-    /* transform: translateX(10%); */
     text-align: center;
-
   }
   .coverText{
     top: 35%;
-    
     font-size: initial;
   }
 }
@@ -236,7 +216,6 @@ footer{
       width: 90%;
       display: grid;
       grid-template-columns: repeat(4,1fr);
-      /* column-gap: 20px; */
     }
   .title h1{
       display: inline-block;
@@ -247,7 +226,6 @@ footer{
     display: none;
   }
 }
-
 .catIcon{
   width: var(--iconSize);
   height: var(--iconSize);
