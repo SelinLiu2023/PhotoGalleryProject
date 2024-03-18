@@ -3,8 +3,9 @@ This is test project.
 
 ## About the project
 This website shows the picture of cats from Nürnberg Tierheim.
+![alt catproject](/assets/Untitled%20‑%20Made%20with%20FlexClip.gif)
 
-![alt catproject](/assets/Screenshot%20from%202024-03-07%2012-45-01.png)
+
 
 ## Features
 - Adding more photos will not affect the layout.
@@ -37,3 +38,4 @@ free photos from :
 - 0803 different hover effect for column 2 and column 3
 - 1103 different hover effect for column 4
 - 1403 add ADs 
+- 1503 add color change animation to button border
